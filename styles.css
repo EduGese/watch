@@ -1,3 +1,8 @@
+/*Fonts*/
+@font-face {
+  font-family: "Handjet";
+  src: url("fonts/static/Handjet-Medium.ttf") format("woff2");
+}
 /*Button slider*/
 
 .sliderContainer {
@@ -31,7 +36,8 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
-  color: aliceblue;
+  font-family: 'Handjet';
+  /* color: chocolate; */
 }
 
 .slider:before {
@@ -41,14 +47,14 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: chocolate;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  border: 1px solid chocolate;
 }
 
 input:focus + .slider {
@@ -83,8 +89,15 @@ input:checked + .slider:before {
 }
 
 .case {
+  font-family: "Handjet";
+
   border: 3px solid chocolate;
-  padding: 20px 40px;
+  padding: 0 40px;
   border-radius: 30px;
 }
+/* p{
+  background-color: antiquewhite;
+  border-radius: 30px;
+  padding: 20px 40px;
 
+} */

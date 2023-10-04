@@ -19,6 +19,8 @@ function changeMode() {
     element.classList.toggle("dark");
     element.classList.toggle("light");
   });
+
+  
 }
 
 function changeText(){
@@ -26,9 +28,16 @@ function changeText(){
   const textValue = text.textContent;
   if (textValue === "Light Mode") {
     text.textContent = "Dark Mode";
+    text.style.backgroundColor = 'black';
+    text.style.color = 'white';
+
   } else {
     text.textContent = "Light Mode";
+    text.style.backgroundColor = 'white';
+    text.style.color = 'chocolate';
+    
   }
+  
 }
 
 
