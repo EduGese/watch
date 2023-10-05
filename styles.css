@@ -84,20 +84,18 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 40px;
-  font-family: Inconsolata;
+  font-size: 60px;
+  /* font-family: Inconsolata; */
 }
 
 .case {
   font-family: "Handjet";
-
-  border: 3px solid chocolate;
+  /* border: 3px solid chocolate; */
   padding: 0 40px;
   border-radius: 30px;
 }
-/* p{
+ /* p{
   background-color: antiquewhite;
   border-radius: 30px;
   padding: 20px 40px;
-
-} */
+}  */
