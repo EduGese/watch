@@ -1,19 +1,46 @@
 /*Fonts*/
 @font-face {
   font-family: "Handjet";
-  src: url("fonts/static/Handjet-Medium.ttf") format("woff2");
+  src: url("fonts/static/Handjet-Medium.ttf");
 }
-/*Button slider*/
 
-.sliderContainer {
-  text-align: center;
+/*Global styles*/
+
+body{
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
+header{
+  position:fixed;
+  top: 20px;
+}
+footer{
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10px;
+
+}
+footer a{
+  text-decoration: none;
+}
+
+
+/*Button slider*/
 
 .switch {
   position: relative;
   display: inline-block;
   width: 160px;
   height: 34px;
+  text-align: center;
 }
 
 .switch input {
@@ -27,7 +54,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  cursor: pointer;
+  cursor:pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -37,7 +64,6 @@
   transition: 0.4s;
   border-radius: 34px;
   font-family: 'Handjet';
-  /* color: chocolate; */
 }
 
 .slider:before {
@@ -55,10 +81,6 @@
 
 input:checked + .slider {
   border: 1px solid chocolate;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -83,19 +105,20 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  flex-direction: column;
   font-size: 60px;
-  /* font-family: Inconsolata; */
 }
 
 .case {
   font-family: "Handjet";
-  /* border: 3px solid chocolate; */
+  border: 3px solid chocolate;
   padding: 0 40px;
   border-radius: 30px;
 }
- /* p{
-  background-color: antiquewhite;
-  border-radius: 30px;
-  padding: 20px 40px;
-}  */
+
+.date{
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+

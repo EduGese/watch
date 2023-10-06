@@ -1,32 +1,31 @@
 function getDate(){
 
-  const months = ["January","February","March","April","May",
-  "June","July","August","September","October","November","December"];
+  const months = ["Jan","Feb","Mar","Apr","May",
+  "Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday",
   "Friday","Saturday"];
 
-  
   const todayDate = new Date();
 
-  let month = months[todayDate.getMonth()];
-  let day = days[todayDate.getDay()];
+  // const month = months[todayDate.getMonth()];
+  // const wordDay = days[todayDate.getDay()];
+  // const numberDay = todayDate.getDate();
+  // const year = todayDate.getFullYear();
 
-  console.log(month);
-  console.log(day);
-  console.log(todayDate.getFullYear());
+document.getElementById('month').textContent = months[todayDate.getMonth()];
+document.getElementById('wordDay').textContent = days[todayDate.getDay()];
+document.getElementById('numberDay').textContent = todayDate.getDate();
+document.getElementById('year').textContent = todayDate.getFullYear();
+
 
 }
 function getTime() {
-  const now = new Date();
-
-  const hours = now.getHours().toString().padStart(2, "0");
-  const minutes = now.getMinutes().toString().padStart(2, "0");
-  const seconds = now.getSeconds().toString().padStart(2, "0");
-
-  const time = formatTime(hours, minutes, seconds);
 
   const timeContainer = document.getElementById("time");
-  timeContainer.textContent = time;
+  const options = { hour12: false };
+  timeContainer.textContent = new Date().toLocaleTimeString(undefined, options);
+
+
 }
 function formatTime(hours, minutes, seconds) {
   return `${hours} : ${minutes} : ${seconds}`;
