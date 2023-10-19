@@ -84,7 +84,5 @@ If you would like to contribute to this project, you can follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/EduGese/watch/blob/main/LICENSE) file for details.
 
-Please make sure to replace the placeholders with the actual links and your repository information.
