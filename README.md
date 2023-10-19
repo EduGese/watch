@@ -5,7 +5,7 @@ A simple digital clock project that displays the current time and date. You can 
 
 ## Table of Contents
 
-- [(Demo)](#demo)
+- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
